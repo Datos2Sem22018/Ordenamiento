@@ -96,12 +96,6 @@
 		<Unit filename="/home/mariano/CLionProjects/Ordenamiento/LinkedList/Node/Node.h">
 			<Option target="Ordenamiento"/>
 		</Unit>
-		<Unit filename="/home/mariano/CLionProjects/Ordenamiento/QuickSort.cpp">
-			<Option target="Ordenamiento"/>
-		</Unit>
-		<Unit filename="/home/mariano/CLionProjects/Ordenamiento/QuickSort.h">
-			<Option target="Ordenamiento"/>
-		</Unit>
 		<Unit filename="/home/mariano/CLionProjects/Ordenamiento/main.cpp">
 			<Option target="Ordenamiento"/>
 		</Unit>

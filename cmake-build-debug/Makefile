@@ -177,33 +177,6 @@ LinkedList/Node/Node.cpp.s:
 	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s
 .PHONY : LinkedList/Node/Node.cpp.s
 
-QuickSort.o: QuickSort.cpp.o
-
-.PHONY : QuickSort.o
-
-# target to build an object file
-QuickSort.cpp.o:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.o
-.PHONY : QuickSort.cpp.o
-
-QuickSort.i: QuickSort.cpp.i
-
-.PHONY : QuickSort.i
-
-# target to preprocess a source file
-QuickSort.cpp.i:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.i
-.PHONY : QuickSort.cpp.i
-
-QuickSort.s: QuickSort.cpp.s
-
-.PHONY : QuickSort.s
-
-# target to generate assembly for a file
-QuickSort.cpp.s:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.s
-.PHONY : QuickSort.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -246,9 +219,6 @@ help:
 	@echo "... LinkedList/Node/Node.o"
 	@echo "... LinkedList/Node/Node.i"
 	@echo "... LinkedList/Node/Node.s"
-	@echo "... QuickSort.o"
-	@echo "... QuickSort.i"
-	@echo "... QuickSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

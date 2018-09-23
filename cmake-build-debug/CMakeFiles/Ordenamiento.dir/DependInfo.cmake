@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mariano/CLionProjects/Ordenamiento/LinkedList/LinkedList.cpp" "/home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.o"
   "/home/mariano/CLionProjects/Ordenamiento/LinkedList/Node/Node.cpp" "/home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.o"
-  "/home/mariano/CLionProjects/Ordenamiento/QuickSort.cpp" "/home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/QuickSort.cpp.o"
   "/home/mariano/CLionProjects/Ordenamiento/main.cpp" "/home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -16,6 +16,7 @@ public:
     Node<T>* getLastNode();
     Node<T>* search(T var);
     Node<T>* deleteNode(T var);
+    Node<T>* get(int i);
     void printList();
     LinkedList();
     ~LinkedList() = default;

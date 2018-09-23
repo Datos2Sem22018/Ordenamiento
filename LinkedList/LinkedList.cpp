@@ -51,6 +51,14 @@ Node<T>* LinkedList<T>::search(T var) {
         ptr = ptr->next;
     }
 }
+template <class T>
+Node<T>* LinkedList<T>::get(int i){
+    Node<T>* ptr = head;
+    for(int x=0; x<=i; x++){
+        ptr = ptr->next;
+    }
+    return ptr;
+}
 
 template <class T>
 Node<T>* LinkedList<T>::deleteNode(T var) {
