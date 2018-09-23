@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/karla/Descargas/clion/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mariano/CLionProjects/Ordenamiento
+CMAKE_SOURCE_DIR = /home/karla/CLionProjects/Ordenamiento
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug
+CMAKE_BINARY_DIR = /home/karla/CLionProjects/Ordenamiento/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,87 @@ Ordenamiento/fast:
 	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/build
 .PHONY : Ordenamiento/fast
 
+LinkedList/LinkedList.o: LinkedList/LinkedList.cpp.o
+
+.PHONY : LinkedList/LinkedList.o
+
+# target to build an object file
+LinkedList/LinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.o
+.PHONY : LinkedList/LinkedList.cpp.o
+
+LinkedList/LinkedList.i: LinkedList/LinkedList.cpp.i
+
+.PHONY : LinkedList/LinkedList.i
+
+# target to preprocess a source file
+LinkedList/LinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.i
+.PHONY : LinkedList/LinkedList.cpp.i
+
+LinkedList/LinkedList.s: LinkedList/LinkedList.cpp.s
+
+.PHONY : LinkedList/LinkedList.s
+
+# target to generate assembly for a file
+LinkedList/LinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.s
+.PHONY : LinkedList/LinkedList.cpp.s
+
+LinkedList/Node/Node.o: LinkedList/Node/Node.cpp.o
+
+.PHONY : LinkedList/Node/Node.o
+
+# target to build an object file
+LinkedList/Node/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.o
+.PHONY : LinkedList/Node/Node.cpp.o
+
+LinkedList/Node/Node.i: LinkedList/Node/Node.cpp.i
+
+.PHONY : LinkedList/Node/Node.i
+
+# target to preprocess a source file
+LinkedList/Node/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.i
+.PHONY : LinkedList/Node/Node.cpp.i
+
+LinkedList/Node/Node.s: LinkedList/Node/Node.cpp.s
+
+.PHONY : LinkedList/Node/Node.s
+
+# target to generate assembly for a file
+LinkedList/Node/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s
+.PHONY : LinkedList/Node/Node.cpp.s
+
+QuickSort.o: QuickSort.cpp.o
+
+.PHONY : QuickSort.o
+
+# target to build an object file
+QuickSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.o
+.PHONY : QuickSort.cpp.o
+
+QuickSort.i: QuickSort.cpp.i
+
+.PHONY : QuickSort.i
+
+# target to preprocess a source file
+QuickSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.i
+.PHONY : QuickSort.cpp.i
+
+QuickSort.s: QuickSort.cpp.s
+
+.PHONY : QuickSort.s
+
+# target to generate assembly for a file
+QuickSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort.cpp.s
+.PHONY : QuickSort.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Ordenamiento"
+	@echo "... LinkedList/LinkedList.o"
+	@echo "... LinkedList/LinkedList.i"
+	@echo "... LinkedList/LinkedList.s"
+	@echo "... LinkedList/Node/Node.o"
+	@echo "... LinkedList/Node/Node.i"
+	@echo "... LinkedList/Node/Node.s"
+	@echo "... QuickSort.o"
+	@echo "... QuickSort.i"
+	@echo "... QuickSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
