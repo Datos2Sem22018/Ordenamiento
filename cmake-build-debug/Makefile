@@ -150,32 +150,32 @@ BubbleSort/BubbleSort.cpp.s:
 	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.s
 .PHONY : BubbleSort/BubbleSort.cpp.s
 
-InsertionSort.o: InsertionSort.cpp.o
+InsertionSort/InsertionSort.o: InsertionSort/InsertionSort.cpp.o
 
-.PHONY : InsertionSort.o
+.PHONY : InsertionSort/InsertionSort.o
 
 # target to build an object file
-InsertionSort.cpp.o:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o
-.PHONY : InsertionSort.cpp.o
+InsertionSort/InsertionSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o
+.PHONY : InsertionSort/InsertionSort.cpp.o
 
-InsertionSort.i: InsertionSort.cpp.i
+InsertionSort/InsertionSort.i: InsertionSort/InsertionSort.cpp.i
 
-.PHONY : InsertionSort.i
+.PHONY : InsertionSort/InsertionSort.i
 
 # target to preprocess a source file
-InsertionSort.cpp.i:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.i
-.PHONY : InsertionSort.cpp.i
+InsertionSort/InsertionSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.i
+.PHONY : InsertionSort/InsertionSort.cpp.i
 
-InsertionSort.s: InsertionSort.cpp.s
+InsertionSort/InsertionSort.s: InsertionSort/InsertionSort.cpp.s
 
-.PHONY : InsertionSort.s
+.PHONY : InsertionSort/InsertionSort.s
 
 # target to generate assembly for a file
-InsertionSort.cpp.s:
-	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.s
-.PHONY : InsertionSort.cpp.s
+InsertionSort/InsertionSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.s
+.PHONY : InsertionSort/InsertionSort.cpp.s
 
 LinkedList/LinkedList.o: LinkedList/LinkedList.cpp.o
 
@@ -297,9 +297,9 @@ help:
 	@echo "... BubbleSort/BubbleSort.o"
 	@echo "... BubbleSort/BubbleSort.i"
 	@echo "... BubbleSort/BubbleSort.s"
-	@echo "... InsertionSort.o"
-	@echo "... InsertionSort.i"
-	@echo "... InsertionSort.s"
+	@echo "... InsertionSort/InsertionSort.o"
+	@echo "... InsertionSort/InsertionSort.i"
+	@echo "... InsertionSort/InsertionSort.s"
 	@echo "... LinkedList/LinkedList.o"
 	@echo "... LinkedList/LinkedList.i"
 	@echo "... LinkedList/LinkedList.s"

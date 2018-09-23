@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/karla/CLionProjects/Ordenamiento/BubbleSort/BubbleSort.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.o"
-  "/home/karla/CLionProjects/Ordenamiento/InsertionSort.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o"
+  "/home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o"
   "/home/karla/CLionProjects/Ordenamiento/LinkedList/LinkedList.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.o"
   "/home/karla/CLionProjects/Ordenamiento/LinkedList/Node/Node.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.o"
   "/home/karla/CLionProjects/Ordenamiento/QuickSort/QuickSort.cpp" "/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o"

@@ -90,10 +90,10 @@
 		<Unit filename="/home/karla/CLionProjects/Ordenamiento/BubbleSort/BubbleSort.h">
 			<Option target="Ordenamiento"/>
 		</Unit>
-		<Unit filename="/home/karla/CLionProjects/Ordenamiento/InsertionSort.cpp">
+		<Unit filename="/home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.cpp">
 			<Option target="Ordenamiento"/>
 		</Unit>
-		<Unit filename="/home/karla/CLionProjects/Ordenamiento/InsertionSort.h">
+		<Unit filename="/home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.h">
 			<Option target="Ordenamiento"/>
 		</Unit>
 		<Unit filename="/home/karla/CLionProjects/Ordenamiento/LinkedList/LinkedList.cpp">

@@ -96,18 +96,18 @@ CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karla/CLionProjects/Ordenamiento/LinkedList/Node/Node.cpp -o CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s
 
-CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o: CMakeFiles/Ordenamiento.dir/flags.make
-CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o: ../InsertionSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o -c /home/karla/CLionProjects/Ordenamiento/InsertionSort.cpp
+CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o: CMakeFiles/Ordenamiento.dir/flags.make
+CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o: ../InsertionSort/InsertionSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o -c /home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.cpp
 
-CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karla/CLionProjects/Ordenamiento/InsertionSort.cpp > CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.i
+CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.cpp > CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.i
 
-CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karla/CLionProjects/Ordenamiento/InsertionSort.cpp -o CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.s
+CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karla/CLionProjects/Ordenamiento/InsertionSort/InsertionSort.cpp -o CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.s
 
 CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o: CMakeFiles/Ordenamiento.dir/flags.make
 CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o: ../QuickSort/QuickSort.cpp
@@ -140,7 +140,7 @@ Ordenamiento_OBJECTS = \
 "CMakeFiles/Ordenamiento.dir/main.cpp.o" \
 "CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.o" \
 "CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.o" \
-"CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o" \
+"CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o" \
 "CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o" \
 "CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.o"
 
@@ -150,7 +150,7 @@ Ordenamiento_EXTERNAL_OBJECTS =
 Ordenamiento: CMakeFiles/Ordenamiento.dir/main.cpp.o
 Ordenamiento: CMakeFiles/Ordenamiento.dir/LinkedList/LinkedList.cpp.o
 Ordenamiento: CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.o
-Ordenamiento: CMakeFiles/Ordenamiento.dir/InsertionSort.cpp.o
+Ordenamiento: CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o
 Ordenamiento: CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o
 Ordenamiento: CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.o
 Ordenamiento: CMakeFiles/Ordenamiento.dir/build.make
