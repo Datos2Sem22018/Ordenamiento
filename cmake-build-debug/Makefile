@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/karla/Descargas/clion/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mariano/CLionProjects/Ordenamiento
+CMAKE_SOURCE_DIR = /home/karla/CLionProjects/Ordenamiento
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug
+CMAKE_BINARY_DIR = /home/karla/CLionProjects/Ordenamiento/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mariano/Documentos/clion/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/karla/Descargas/clion/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariano/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karla/CLionProjects/Ordenamiento/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,60 @@ Ordenamiento: cmake_check_build_system
 Ordenamiento/fast:
 	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/build
 .PHONY : Ordenamiento/fast
+
+BubbleSort/BubbleSort.o: BubbleSort/BubbleSort.cpp.o
+
+.PHONY : BubbleSort/BubbleSort.o
+
+# target to build an object file
+BubbleSort/BubbleSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.o
+.PHONY : BubbleSort/BubbleSort.cpp.o
+
+BubbleSort/BubbleSort.i: BubbleSort/BubbleSort.cpp.i
+
+.PHONY : BubbleSort/BubbleSort.i
+
+# target to preprocess a source file
+BubbleSort/BubbleSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.i
+.PHONY : BubbleSort/BubbleSort.cpp.i
+
+BubbleSort/BubbleSort.s: BubbleSort/BubbleSort.cpp.s
+
+.PHONY : BubbleSort/BubbleSort.s
+
+# target to generate assembly for a file
+BubbleSort/BubbleSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/BubbleSort/BubbleSort.cpp.s
+.PHONY : BubbleSort/BubbleSort.cpp.s
+
+InsertionSort/InsertionSort.o: InsertionSort/InsertionSort.cpp.o
+
+.PHONY : InsertionSort/InsertionSort.o
+
+# target to build an object file
+InsertionSort/InsertionSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.o
+.PHONY : InsertionSort/InsertionSort.cpp.o
+
+InsertionSort/InsertionSort.i: InsertionSort/InsertionSort.cpp.i
+
+.PHONY : InsertionSort/InsertionSort.i
+
+# target to preprocess a source file
+InsertionSort/InsertionSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.i
+.PHONY : InsertionSort/InsertionSort.cpp.i
+
+InsertionSort/InsertionSort.s: InsertionSort/InsertionSort.cpp.s
+
+.PHONY : InsertionSort/InsertionSort.s
+
+# target to generate assembly for a file
+InsertionSort/InsertionSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/InsertionSort/InsertionSort.cpp.s
+.PHONY : InsertionSort/InsertionSort.cpp.s
 
 LinkedList/LinkedList.o: LinkedList/LinkedList.cpp.o
 
@@ -177,6 +231,33 @@ LinkedList/Node/Node.cpp.s:
 	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/LinkedList/Node/Node.cpp.s
 .PHONY : LinkedList/Node/Node.cpp.s
 
+QuickSort/QuickSort.o: QuickSort/QuickSort.cpp.o
+
+.PHONY : QuickSort/QuickSort.o
+
+# target to build an object file
+QuickSort/QuickSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.o
+.PHONY : QuickSort/QuickSort.cpp.o
+
+QuickSort/QuickSort.i: QuickSort/QuickSort.cpp.i
+
+.PHONY : QuickSort/QuickSort.i
+
+# target to preprocess a source file
+QuickSort/QuickSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.i
+.PHONY : QuickSort/QuickSort.cpp.i
+
+QuickSort/QuickSort.s: QuickSort/QuickSort.cpp.s
+
+.PHONY : QuickSort/QuickSort.s
+
+# target to generate assembly for a file
+QuickSort/QuickSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Ordenamiento.dir/build.make CMakeFiles/Ordenamiento.dir/QuickSort/QuickSort.cpp.s
+.PHONY : QuickSort/QuickSort.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -213,12 +294,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Ordenamiento"
+	@echo "... BubbleSort/BubbleSort.o"
+	@echo "... BubbleSort/BubbleSort.i"
+	@echo "... BubbleSort/BubbleSort.s"
+	@echo "... InsertionSort/InsertionSort.o"
+	@echo "... InsertionSort/InsertionSort.i"
+	@echo "... InsertionSort/InsertionSort.s"
 	@echo "... LinkedList/LinkedList.o"
 	@echo "... LinkedList/LinkedList.i"
 	@echo "... LinkedList/LinkedList.s"
 	@echo "... LinkedList/Node/Node.o"
 	@echo "... LinkedList/Node/Node.i"
 	@echo "... LinkedList/Node/Node.s"
+	@echo "... QuickSort/QuickSort.o"
+	@echo "... QuickSort/QuickSort.i"
+	@echo "... QuickSort/QuickSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
