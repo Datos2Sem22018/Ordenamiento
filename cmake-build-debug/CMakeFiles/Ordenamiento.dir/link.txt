@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Ordenamiento.dir/main.cpp.o  -o Ordenamiento 
