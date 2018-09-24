@@ -3,6 +3,7 @@
 #include <math.h>
 #include "LinkedList/LinkedList.h"
 using namespace std;
+
 /* Function to sort an array using insertion sort*/
 template <class T>
 void insertionSort(LinkedList<T>* arr, int n){
@@ -25,24 +26,21 @@ void insertionSort(LinkedList<T>* arr, int n){
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-template <class T>
-void swap(T *xp, T *yp)
-{
-    T temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
+
 template <class T>
 // A function to implement bubble sort
-void bubbleSort(LinkedList<T>* arr, int n)
-{
+void bubbleSort(LinkedList<T>* arr, int n){
     int i, j;
     for (i = 0; i < n-1; i++)
 
         // Last i elements are already in place
-        for (j = 0; j < n-i-1; j++)
-            if (arr->get(j) > arr->get(j+1))
-                swap(&arr->get(j), &arr->get(j+1));
+        for (j = 0; j < n-i-1; j++){
+            if (arr->get(j) > arr->get(j+1)){
+                T m = arr->get(j);
+                arr->setValue(arr->get(j+1), j);
+                arr->setValue(m, j+1);
+            }
+        }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -59,19 +57,20 @@ void swapQ(int* a, int* b){
     array, and places all smaller (smaller than pivot)
    to left of pivot and all greater elements to right
    of pivot */
-int partition (int arr[], int low, int high)
-{
-    int pivot = arr[high];    // pivot
+template <class T>
+int partition (LinkedList<T>* arr, int low, int high){
+    T pivot = arr->get(high);    // pivot
     int i = (low - 1);  // Index of smaller element
 
-    for (int j = low; j <= high- 1; j++)
-    {
+    for (int j = low; j <= high- 1; j++){
         // If current element is smaller than or
         // equal to pivot
-        if (arr[j] <= pivot)
-        {
+        if (arr->get(j) <= pivot){
             i++;    // increment index of smaller element
-            swapQ(&arr[i], &arr[j]);
+            T m = arr->get(i);
+            arr->setValue(arr->get(j), i);
+            arr->setValue(m, j);
+            //swapQ(&arr[i], &arr[j]);
         }
     }
     swapQ(&arr[i + 1], &arr[high]);
@@ -122,7 +121,7 @@ int main()
     auto * list = new LinkedList<string>();
     list->add("m");
     list->add("a");
-    list->add("j");
+    list->add("z");
     list->printList();
     cout << list->size << endl;
 
@@ -132,7 +131,9 @@ int main()
     std::cout<<std::endl;
     int j = list->size;
     bubbleSort(list, j);
+    std::cout<<"bubbleSort"<< std::endl;
     list->printList();
+    std::cout<<"desp bubbleSort"<< std::endl;
     //printArray(arrI, n);
     std::cout<<std::endl;
 
