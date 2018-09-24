@@ -2,55 +2,53 @@
 #include <stdio.h>
 #include <math.h>
 #include "LinkedList/LinkedList.h"
+using namespace std;
 /* Function to sort an array using insertion sort*/
-void insertionSort(int arr[], int n)
-{
-    int i, key, j;
-    for (i = 1; i < n; i++)
-    {
-        key = arr[i];
+template <class T>
+void insertionSort(LinkedList<T>* arr, int n){
+    int i, j;
+    T key;
+    for (i = 1; i < n; i++){
+        key = arr->get(i);
         j = i-1;
-
         /* Move elements of arr[0..i-1], that are
            greater than key, to one position ahead
            of their current position */
-        while (j >= 0 && arr[j] > key)
-        {
-            arr[j+1] = arr[j];
+        while (j >= 0 && arr->get(j) > key){
+            T element = arr->get(j);
+            arr->setValue(element, j+1);
             j = j-1;
         }
-        arr[j+1] = key;
+        arr->setValue(key, j+1);
     }
 }
-
-
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-void swap(int *xp, int *yp)
+template <class T>
+void swap(T *xp, T *yp)
 {
-    int temp = *xp;
+    T temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
-
+template <class T>
 // A function to implement bubble sort
-void bubbleSort(int arr[], int n)
+void bubbleSort(LinkedList<T>* arr, int n)
 {
     int i, j;
     for (i = 0; i < n-1; i++)
 
         // Last i elements are already in place
         for (j = 0; j < n-i-1; j++)
-            if (arr[j] > arr[j+1])
-                swap(&arr[j], &arr[j+1]);
+            if (arr->get(j) > arr->get(j+1))
+                swap(&arr->get(j), &arr->get(j+1));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-void swapQ(int* a, int* b)
-{
+void swapQ(int* a, int* b){
     int t = *a;
     *a = *b;
     *b = t;
@@ -121,22 +119,32 @@ int main()
     int arrI[] = {12, 11, 13, 5, 6};
     int arrQ[] = {14, 1, 13, 8, 6};
     int arrB[] = {17, 10, 11, 5, 3};
+    auto * list = new LinkedList<string>();
+    list->add("m");
+    list->add("a");
+    list->add("j");
+    list->printList();
+    cout << list->size << endl;
 
     int n = sizeof(arrI)/sizeof(arrI[0]);
-    printArray(arrI, n);
-    insertionSort(arrI, n);
-    printArray(arrI, n);
+    //printArray(arrI, n);
+    list->printList();
+    std::cout<<std::endl;
+    int j = list->size;
+    bubbleSort(list, j);
+    list->printList();
+    //printArray(arrI, n);
     std::cout<<std::endl;
 
     int m = sizeof(arrQ)/sizeof(arrQ[0]);
     printArray(arrQ, m);
-    insertionSort(arrQ, m);
+    //insertionSort(arrQ, m);
     printArray(arrQ, m);
     std::cout<<std::endl;
 
     int a = sizeof(arrB)/sizeof(arrB[0]);
     printArray(arrB, a);
-    insertionSort(arrB, a);
+    //insertionSort(arrB, a);
     printArray(arrB, a);
     std::cout<<std::endl;
 
