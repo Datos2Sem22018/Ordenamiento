@@ -46,11 +46,6 @@ void bubbleSort(LinkedList<T>* arr, int n){
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-void swapQ(int* a, int* b){
-    int t = *a;
-    *a = *b;
-    *b = t;
-}
 
 /* This function takes last element as pivot, places
    the pivot element at its correct position in sorted
@@ -70,10 +65,11 @@ int partition (LinkedList<T>* arr, int low, int high){
             T m = arr->get(i);
             arr->setValue(arr->get(j), i);
             arr->setValue(m, j);
-            //swapQ(&arr[i], &arr[j]);
         }
     }
-    swapQ(&arr[i + 1], &arr[high]);
+    T m = arr->get(i+1);
+    arr->setValue(arr->get(high), i+1);
+    arr->setValue(m, high);
     return (i + 1);
 }
 
@@ -81,7 +77,8 @@ int partition (LinkedList<T>* arr, int low, int high){
  arr[] --> Array to be sorted,
   low  --> Starting index,
   high  --> Ending index */
-void quickSort(int arr[], int low, int high)
+template <class T>
+void quickSort(LinkedList<T>* arr, int low, int high)
 {
     if (low < high)
     {
@@ -101,52 +98,61 @@ void quickSort(int arr[], int low, int high)
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-
-
-// A utility function to print an array of size n
-void printArray(int arr[], int n)
-{
-    int i;
-    for (i=0; i < n; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
-}
-
 /* Driver program to test insertion sort */
 int main()
 {
-    int arrI[] = {12, 11, 13, 5, 6};
-    int arrQ[] = {14, 1, 13, 8, 6};
-    int arrB[] = {17, 10, 11, 5, 3};
+
     auto * list = new LinkedList<string>();
-    list->add("m");
-    list->add("a");
-    list->add("z");
-    list->printList();
+    list->add("mariano");
+    list->add("daniel");
+    list->add("karla");
+    list->add("alejandro");
+    list->add("juanita la huerfanita");
     cout << list->size << endl;
 
-    int n = sizeof(arrI)/sizeof(arrI[0]);
-    //printArray(arrI, n);
     list->printList();
     std::cout<<std::endl;
     int j = list->size;
-    bubbleSort(list, j);
-    std::cout<<"bubbleSort"<< std::endl;
+    quickSort(list, 0, j-1);
+    std::cout<<"quickSort"<< std::endl;
     list->printList();
-    std::cout<<"desp bubbleSort"<< std::endl;
-    //printArray(arrI, n);
+    std::cout<<std::endl;
+    std::cout<<"desp quickSort\n"<< std::endl;
     std::cout<<std::endl;
 
-    int m = sizeof(arrQ)/sizeof(arrQ[0]);
-    printArray(arrQ, m);
-    //insertionSort(arrQ, m);
-    printArray(arrQ, m);
+    auto * list2 = new LinkedList<double>();
+    list2->add(4.5);
+    list2->add(4.0);
+    list2->add(6.9);
+    list2->add(7.4);
+    list2->add(10.8);
+    list2->add(45.2);
+    list2->printList();
+    std::cout<<std::endl;
+    int l = list2->size;
+
+    insertionSort(list2, l);
+    std::cout<<"insertionSort"<< std::endl;
+    list2->printList();
+    std::cout<<std::endl;
+    std::cout<<"desp insertionSort\n"<< std::endl;
     std::cout<<std::endl;
 
-    int a = sizeof(arrB)/sizeof(arrB[0]);
-    printArray(arrB, a);
-    //insertionSort(arrB, a);
-    printArray(arrB, a);
+    auto * list3 = new LinkedList<int>();
+    list3->add(45);
+    list3->add(8);
+    list3->add(-1);
+    list3->add(2);
+    list3->add(-34);
+    list3->add(48274230);
+    list3->printList();
+    std::cout<<std::endl;
+    int p = list->size;
+    bubbleSort(list3, p);
+    std::cout<<"bubbleSort"<< std::endl;
+    list3->printList();
+    std::cout<<std::endl;
+    std::cout<<"desp bubbleSort\n"<< std::endl;
     std::cout<<std::endl;
 
 
