@@ -3,4 +3,4 @@ project(Ordenamiento)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Ordenamiento main.cpp LinkedList/LinkedList.h LinkedList/Node/Node.h)
+add_executable(Ordenamiento main.cpp LinkedList/LinkedListDouble.h LinkedList/Node/NodeDouble.h)

@@ -1,12 +1,12 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-#include "LinkedList/LinkedList.h"
+#include "LinkedList/LinkedListDouble.h"
 using namespace std;
 
 /* Function to sort an array using insertion sort*/
 template <class T>
-void insertionSort(LinkedList<T>* arr, int n){
+void insertionSort(LinkedListDouble<T>* arr, int n){
     int i, j;
     T key;
     for (i = 1; i < n; i++){
@@ -29,7 +29,7 @@ void insertionSort(LinkedList<T>* arr, int n){
 
 template <class T>
 // A function to implement bubble sort
-void bubbleSort(LinkedList<T>* arr, int n){
+void bubbleSort(LinkedListDouble<T>* arr, int n){
     int i, j;
     for (i = 0; i < n-1; i++)
 
@@ -53,7 +53,7 @@ void bubbleSort(LinkedList<T>* arr, int n){
    to left of pivot and all greater elements to right
    of pivot */
 template <class T>
-int partition (LinkedList<T>* arr, int low, int high){
+int partition (LinkedListDouble<T>* arr, int low, int high){
     T pivot = arr->get(high);    // pivot
     int i = (low - 1);  // Index of smaller element
 
@@ -78,7 +78,7 @@ int partition (LinkedList<T>* arr, int low, int high){
   low  --> Starting index,
   high  --> Ending index */
 template <class T>
-void quickSort(LinkedList<T>* arr, int low, int high)
+void quickSort(LinkedListDouble<T>* arr, int low, int high)
 {
     if (low < high)
     {
@@ -102,7 +102,7 @@ void quickSort(LinkedList<T>* arr, int low, int high)
 int main()
 {
 
-    auto * list = new LinkedList<string>();
+    auto * list = new LinkedListDouble<string>();
     list->add("mariano");
     list->add("daniel");
     list->add("karla");
@@ -120,7 +120,8 @@ int main()
     std::cout<<"desp quickSort\n"<< std::endl;
     std::cout<<std::endl;
 
-    auto * list2 = new LinkedList<double>();
+
+    auto * list2 = new LinkedListDouble<double>();
     list2->add(4.5);
     list2->add(4.0);
     list2->add(6.9);
@@ -138,13 +139,16 @@ int main()
     std::cout<<"desp insertionSort\n"<< std::endl;
     std::cout<<std::endl;
 
-    auto * list3 = new LinkedList<int>();
+    auto * list3 = new LinkedListDouble<int>();
     list3->add(45);
     list3->add(8);
     list3->add(-1);
     list3->add(2);
     list3->add(-34);
     list3->add(48274230);
+    list3->printList();
+    list3->remove(1);
+    std::cout<<std::endl;
     list3->printList();
     std::cout<<std::endl;
     int p = list->size;
