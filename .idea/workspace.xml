@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7a3c56-6bcf-4073-86d9-14de7578fda0" name="Default Changelist" comment="" />
+    <list default="true" id="bc7a3c56-6bcf-4073-86d9-14de7578fda0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,77 +26,62 @@
     <session id="1494357177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cmake" value="2" />
           <entry key="cpp" value="9" />
-          <entry key="h" value="10" />
+          <entry key="h" value="11" />
+          <entry key="ostream" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="19" />
+          <entry key="ObjectiveC" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="634" />
-          <entry key="cpp" value="1635" />
-          <entry key="h" value="883" />
-          <entry key="txt" value="620" />
+          <entry key="cpp" value="2252" />
+          <entry key="h" value="885" />
+          <entry key="txt" value="664" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="931" />
+          <entry key="CMakeLists.txt" value="933" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="2517" />
-          <entry key="PLAIN_TEXT" value="323" />
+          <entry key="ObjectiveC" value="3136" />
+          <entry key="PLAIN_TEXT" value="365" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            <state relative-caret-position="336">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#197#206#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake/FindMPointer.cmake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -102,22 +89,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LinkedListDouble/LinkedListDouble.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="558">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="e#158#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedListDouble/Node/NodeDouble.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="e#140#149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,11 +120,11 @@
         <option value="$PROJECT_DIR$/LinkedList/Node/NodeDouble.h" />
         <option value="$PROJECT_DIR$/LinkedList/LinkedList.h" />
         <option value="$PROJECT_DIR$/LinkedList/LinkedListDouble.h" />
-        <option value="$PROJECT_DIR$/LinkedListDouble/LinkedListDouble.h" />
         <option value="$PROJECT_DIR$/LinkedListDouble/Node/NodeDouble.h" />
         <option value="$PROJECT_DIR$/cmake/FindProyecto1.cmake" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake/FindMPointer.cmake" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/LinkedListDouble/LinkedListDouble.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -182,29 +157,7 @@
             <path>
               <item name="Ordenamiento" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ordenamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ordenamiento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ordenamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ordenamiento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ordenamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ordenamiento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ordenamiento" type="462c0819:PsiDirectoryNode" />
               <item name="LinkedListDouble" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ordenamiento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ordenamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedListDouble" type="462c0819:PsiDirectoryNode" />
-              <item name="Node" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,7 +167,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Proyecto1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
@@ -279,6 +232,7 @@
       <workItem from="1538967278623" duration="356000" />
       <workItem from="1539046152130" duration="3956000" />
       <workItem from="1539057824838" duration="1889000" />
+      <workItem from="1539059750072" duration="14255000" />
     </task>
     <task id="LOCAL-00001" summary="Inclusion de LinkedList">
       <created>1537685433409</created>
@@ -336,11 +290,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539059635758</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Now we can include the MPointer library">
+      <created>1539059930944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1539059930944</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Now we can include the MPointer library">
+      <created>1539082614545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1539082614545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51496000" />
+    <option name="totallyTimeSpent" value="65751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,19 +321,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21136364" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21439394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.92495924" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3523654" />
       <window_info anchor="bottom" id="Debug" order="3" weight="1.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.6688418" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.4208809" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32952693" />
@@ -415,7 +384,8 @@
     <MESSAGE value="quicksort funcionando con listas de T, falta listas doblemente enlazadas" />
     <MESSAGE value="metodos de ordenamiento usando listas dobles LinkedListDouble" />
     <MESSAGE value="Proyecto1 library in process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto1 library in process" />
+    <MESSAGE value="Now we can include the MPointer library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now we can include the MPointer library" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/QuickSort.cpp" />
@@ -430,6 +400,7 @@
     <entry file="file://$PROJECT_DIR$/LinkedList/Node/Node.cpp" />
     <entry file="file://$PROJECT_DIR$/LinkedList/LinkedList.h" />
     <entry file="file://$PROJECT_DIR$/LinkedList/Node/Node.h" />
+    <entry file="file://$PROJECT_DIR$/cmake/FindProyecto1.cmake" />
     <entry file="file://$PROJECT_DIR$/LinkedListDouble/Node/NodeDouble.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -440,17 +411,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/FindProyecto1.cmake">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="57">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Escritorio/MPointer/include/MPointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="129" column="14" lean-forward="true" selection-start-line="129" selection-start-column="14" selection-end-line="129" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake/FindMPointer.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/ostream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="107" column="6" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedListDouble/LinkedListDouble.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="558">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
             <element signature="e#158#167#0" expanded="true" />
           </folding>
@@ -459,25 +451,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        <state relative-caret-position="336">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#197#206#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/FindMPointer.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>

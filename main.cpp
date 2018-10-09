@@ -9,16 +9,15 @@ using namespace std;
 template <class T>
 void insertionSort(LinkedListDouble<T>* arr, int n){
     int i, j;
-    int key;
+    T key;
     for (i = 1; i < n; i++){
-        int k = arr->get(j)->operator&();
-        key = k;
+        key = arr->get(i);
         j = i-1;
         /* Move elements of arr[0..i-1], that are
            greater than key, to one position ahead
            of their current position */
-        while (j >= 0 && arr->get(j)->operator&() > key){
-            T element = arr->get(j)->operator&();
+        while (j >= 0 && arr->get(j) > key){
+            T element = arr->get(j);
             arr->setValue(element, j+1);
             j = j-1;
         }
@@ -89,34 +88,47 @@ void quickSort(LinkedListDouble<T>* arr, int low, int high)
         quickSort(arr, pi + 1, high);
     }
 }
+
+
 ////////////////////////////////////////////////////////////////////////////////
 
 int main()
 {
-    LinkedListDouble<MPointer<int>*>* l1 = new LinkedListDouble<MPointer<int>*>();
-    cout << "lista "<< l1 << endl;
-    MPointer<int>* mPtr5 = new MPointer<int>();
-    cout << "mPtr5 " << mPtr5 << endl;
-    mPtr5->setData(5);
-    MPointer<int>* mPtr1 = new MPointer<int>();
-    mPtr1->setData(1);
-    MPointer<int>* mPtr16 = new MPointer<int>();
-    mPtr16->setData(16);
-    MPointer<int>* mPtr4 = new MPointer<int>();
-    cout << "mPtr4 " << mPtr4 << endl;
-    mPtr4->setData(4);
-    cout << "mPtr16 "<<mPtr16 << endl;
-    l1->add(mPtr5);
-    cout << 4 << endl;
-    l1->add(mPtr1);
-    l1->add(mPtr16);
-    l1->add(mPtr4);
-    int n = l1->size;
-    cout << n << endl;
-    //l1->printList();
-    insertionSort<MPointer<int>*>(l1, 11);
-    quickSort<MPointer<int>*>(l1, 4, 11);
-    bubbleSort<MPointer<int>*>(l1, 4);
+    auto * list = new LinkedListDouble<string>();
+    list->add("mariano");
+    list->add("daniel");
+    list->add("karla");
+    list->add("alejandro");
+    cout << list->size << endl;
+
+    list->printList();
+    std::cout<<std::endl;
+    int j = list->size;
+    quickSort(list, 0, j-1);
+    std::cout<<"quickSort"<< std::endl;
+    list->printList();
+    std::cout<<std::endl;
+    std::cout<<"desp quickSort\n"<< std::endl;
+    std::cout<<std::endl;
+
+
+    auto * list2 = new LinkedListDouble<double>();
+    list2->add(4.5);
+    list2->add(4.0);
+    list2->add(6.9);
+    list2->add(7.4);
+    list2->add(10.8);
+    list2->add(45.2);
+    list2->printList();
+    std::cout<<std::endl;
+    int l = list2->size;
+
+    insertionSort(list2, l);
+    std::cout<<"insertionSort"<< std::endl;
+    list2->printList();
+    std::cout<<std::endl;
+    std::cout<<"desp insertionSort\n"<< std::endl;
+    std::cout<<std::endl;
 
     auto * list3 = new LinkedListDouble<int>();
     list3->add(45);
@@ -129,6 +141,14 @@ int main()
     list3->remove(1);
     std::cout<<std::endl;
     list3->printList();
+    std::cout<<std::endl;
+    int p = list->size;
+    bubbleSort(list3, p);
+    std::cout<<"bubbleSort"<< std::endl;
+    list3->printList();
+    std::cout<<std::endl;
+    std::cout<<"desp bubbleSort\n"<< std::endl;
+    std::cout<<std::endl;
 
 
     return 0;
