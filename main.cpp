@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
+#include <thread>
+#include <unistd.h>
 #include "MPointer.h"
 #include "LinkedListDouble/LinkedListDouble.h"
 using namespace std;
@@ -94,12 +96,34 @@ void quickSort(LinkedListDouble<T>* arr, int low, int high)
 
 int main()
 {
-    auto * list = new LinkedListDouble<string>();
-    list->add("mariano");
-    list->add("daniel");
-    list->add("karla");
-    list->add("alejandro");
-    cout << list->size << endl;
+    MPointerGC* mPointerGC = MPointerGC::getInstance();
+    thread t1(mPointerGC->executeMPGC);
+    auto* list = new LinkedListDouble<int >();
+    MPointer<int>* myPtr = new MPointer<int>();
+    *myPtr = 5;
+
+    cout << "Memory addresses: " << endl;
+    cout << &myPtr << endl;
+    MPointer<int>* myPtr2 = new MPointer<int>();
+    *myPtr2 = -1;
+    cout << &myPtr2 << endl;
+    MPointer<int>* myPtr3 = new MPointer<int>();
+    *myPtr3 = 15;
+    cout << &myPtr3 << endl;
+    MPointer<int>* myPtr4 = myPtr;
+    cout << &myPtr4 << endl;
+
+    cout << "Garbage Collector MPointer list: " << flush;
+    mPointerGC->listMemory.printList();
+
+    cout << "Garbage Collector IDs list: " << flush;
+    mPointerGC->listID.printList();
+
+
+    list->add(&(*myPtr3));
+    list->add(&(*myPtr));
+    list->add(&(*myPtr2));
+    list->add(&(*myPtr4));
 
     list->printList();
     std::cout<<std::endl;
@@ -108,47 +132,42 @@ int main()
     std::cout<<"quickSort"<< std::endl;
     list->printList();
     std::cout<<std::endl;
-    std::cout<<"desp quickSort\n"<< std::endl;
+    std::cout<<"after quickSort\n"<< std::endl;
     std::cout<<std::endl;
 
-
-    auto * list2 = new LinkedListDouble<double>();
-    list2->add(4.5);
-    list2->add(4.0);
-    list2->add(6.9);
-    list2->add(7.4);
-    list2->add(10.8);
-    list2->add(45.2);
-    list2->printList();
-    std::cout<<std::endl;
+    auto* list2 = new LinkedListDouble<int >();
+    list2->add(&(*myPtr3));
+    list2->add(&(*myPtr));
+    list2->add(&(*myPtr2));
+    list2->add(&(*myPtr4));
     int l = list2->size;
-
     insertionSort(list2, l);
     std::cout<<"insertionSort"<< std::endl;
-    list2->printList();
+    list->printList();
     std::cout<<std::endl;
-    std::cout<<"desp insertionSort\n"<< std::endl;
+    std::cout<<"after insertionSort\n"<< std::endl;
     std::cout<<std::endl;
 
     auto * list3 = new LinkedListDouble<int>();
-    list3->add(45);
-    list3->add(8);
-    list3->add(-1);
-    list3->add(2);
-    list3->add(-34);
-    list3->add(48274230);
-    list3->printList();
-    list3->remove(1);
+    list3->add(&(*myPtr3));
+    list3->add(&(*myPtr));
+    list3->add(&(*myPtr2));
+    list3->add(&(*myPtr4));
     std::cout<<std::endl;
     list3->printList();
     std::cout<<std::endl;
-    int p = list->size;
+    int p = list3->size;
     bubbleSort(list3, p);
     std::cout<<"bubbleSort"<< std::endl;
     list3->printList();
     std::cout<<std::endl;
-    std::cout<<"desp bubbleSort\n"<< std::endl;
+    std::cout<<"after bubbleSort\n"<< std::endl;
     std::cout<<std::endl;
+    for(int i=0; i<15 ; i++){
+        cout<<"Desde el main"<<endl;
+        usleep(1000000);
+    }
+    t1.join();
 
 
     return 0;
