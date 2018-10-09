@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
+#include "MPointer.h"
 #include "LinkedListDouble/LinkedListDouble.h"
 using namespace std;
 
