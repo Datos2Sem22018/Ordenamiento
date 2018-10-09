@@ -5,7 +5,7 @@
 		<Option title="Ordenamiento"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/karla/CLionProjects/Ordenamiento/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/karla/Escritorio/MPointer/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,6 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/karla/Escritorio/MPointer/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -84,10 +86,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/karla/CLionProjects/Ordenamiento/LinkedList/LinkedListDouble.h">
+		<Unit filename="/home/karla/CLionProjects/Ordenamiento/LinkedListDouble/LinkedListDouble.h">
 			<Option target="Ordenamiento"/>
 		</Unit>
-		<Unit filename="/home/karla/CLionProjects/Ordenamiento/LinkedList/Node/NodeDouble.h">
+		<Unit filename="/home/karla/CLionProjects/Ordenamiento/LinkedListDouble/Node/NodeDouble.h">
 			<Option target="Ordenamiento"/>
 		</Unit>
 		<Unit filename="/home/karla/CLionProjects/Ordenamiento/main.cpp">
@@ -95,6 +97,9 @@
 		</Unit>
 		<Unit filename="/home/karla/CLionProjects/Ordenamiento/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/karla/CLionProjects/Ordenamiento/cmake/FindMPointer.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

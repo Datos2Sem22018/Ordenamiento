@@ -1,10 +1,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-#include "LinkedList/LinkedListDouble.h"
+#include "LinkedListDouble/LinkedListDouble.h"
 using namespace std;
 
-/* Function to sort an array using insertion sort*/
+/* Function to sort a list of MPointer using insertion sort*/
 template <class T>
 void insertionSort(LinkedListDouble<T>* arr, int n){
     int i, j;
@@ -24,8 +24,6 @@ void insertionSort(LinkedListDouble<T>* arr, int n){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
 
 template <class T>
 // A function to implement bubble sort
@@ -44,12 +42,10 @@ void bubbleSort(LinkedListDouble<T>* arr, int n){
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 
 /* This function takes last element as pivot, places
    the pivot element at its correct position in sorted
-    array, and places all smaller (smaller than pivot)
+    list, and places all smaller (smaller than pivot)
    to left of pivot and all greater elements to right
    of pivot */
 template <class T>
@@ -74,7 +70,6 @@ int partition (LinkedListDouble<T>* arr, int low, int high){
 }
 
 /* The main function that implements QuickSort
- arr[] --> Array to be sorted,
   low  --> Starting index,
   high  --> Ending index */
 template <class T>
@@ -82,7 +77,7 @@ void quickSort(LinkedListDouble<T>* arr, int low, int high)
 {
     if (low < high)
     {
-        /* pi is partitioning index, arr[p] is now
+        /* pi is partitioning index, arr.get(p) is now
            at right place */
         int pi = partition(arr, low, high);
 
@@ -95,10 +90,7 @@ void quickSort(LinkedListDouble<T>* arr, int low, int high)
 
 
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 
-/* Driver program to test insertion sort */
 int main()
 {
 
@@ -107,7 +99,6 @@ int main()
     list->add("daniel");
     list->add("karla");
     list->add("alejandro");
-    list->add("juanita la huerfanita");
     cout << list->size << endl;
 
     list->printList();

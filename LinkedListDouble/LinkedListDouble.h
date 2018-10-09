@@ -1,11 +1,8 @@
 //
 // Created by karla on 24/09/18.
 //
-
 #ifndef ORDENAMIENTO_LINKEDLISTDOUBLE_H
 #define ORDENAMIENTO_LINKEDLISTDOUBLE_H
-
-
 #include "Node/NodeDouble.h"
 
 template <class T>
@@ -27,7 +24,7 @@ public:
 };
 template <class T>
 LinkedListDouble<T>::LinkedListDouble() {
-    head = NULL;
+    head = nullptr;
     size = 0;
 }
 template <class T>
@@ -37,7 +34,7 @@ void LinkedListDouble<T>::setValue(T var, int pos) {
 
 template <class T>
 bool LinkedListDouble<T>::isEmpty() {
-    if (head == NULL) {
+    if (head == nullptr) {
         return 1;
     } else {
         return 0;
@@ -49,16 +46,16 @@ void LinkedListDouble<T>::add(T var) {
     if (size == 0) {
         auto* aux = new NodeDouble<T>(var);
         head = aux;
-        head->next = NULL;
-        head->previous = NULL;
+        head->next = nullptr;
+        head->previous = nullptr;
         size++;
     } else {
         NodeDouble<T>* current = head;
-        while (current->next != NULL) {
+        while (current->next != nullptr) {
             current = current->next;
         }
         auto * aux = new NodeDouble<T>(var);
-        aux->next = NULL;
+        aux->next = nullptr;
         current->next = aux;
         aux->previous = current;
         size++;
@@ -73,10 +70,10 @@ void LinkedListDouble<T>::remove(int pos)
         head = current->next;
         size -= 1;
     } else if (pos_aux == size - 1) {
-        while (current->next->next != NULL) {
+        while (current->next->next != nullptr) {
             current = current->next;
         }
-        current->next = NULL;
+        current->next = nullptr;
         size -= 1;
     } else if (pos_aux >= size) {
         std::cout<<"No se encuentra el elemento"<< std::endl;
@@ -88,7 +85,7 @@ void LinkedListDouble<T>::remove(int pos)
         }
         NodeDouble<T>* aux = current->next->next;
         current->next = aux;
-        if (aux == NULL) {
+        if (aux == nullptr) {
             size -= 1;
         } else {
             aux->previous = current;
@@ -105,15 +102,15 @@ NodeDouble<T>* LinkedListDouble<T>::getNode(int pos)
         aux = aux->next;
         x++;
     }
-    if (aux == NULL) {
-        return NULL;
+    if (aux == nullptr) {
+        return nullptr;
     }
     return aux;
 }
 template <class T>
 NodeDouble<T>* LinkedListDouble<T>::search(T var) {
     NodeDouble<T>* ptr = head;
-    while (ptr != NULL && ptr->data != var) {
+    while (ptr != nullptr && ptr->data != var) {
         ptr = ptr->next;
     }
 }
@@ -125,9 +122,8 @@ T LinkedListDouble<T>::get(int i) {
         aux = aux->next;
         x++;
     }
-    if (aux == NULL) {
+    if (aux == nullptr) {
         std::cout<<"No se encuentra el elemento"<< std::endl;
-        return NULL;
     }
     return aux->data;
 }
@@ -135,7 +131,7 @@ T LinkedListDouble<T>::get(int i) {
 template <class T>
 void LinkedListDouble<T>::printList() {
     NodeDouble<T>* ptr = head;
-    while (ptr != NULL) {
+    while (ptr != nullptr) {
         std::cout << ptr->data << "; " << std::flush;
         ptr = ptr->next;
     }
