@@ -1,6 +1,6 @@
 #include <iostream>
-#include <stdio.h>
-#include <math.h>
+#include <cstdio>
+#include <cmath>
 #include "MPointer.h"
 #include "LinkedListDouble/LinkedListDouble.h"
 using namespace std;
@@ -9,16 +9,16 @@ using namespace std;
 template <class T>
 void insertionSort(LinkedListDouble<T>* arr, int n){
     int i, j;
-    int key;
+    T key;
     for (i = 1; i < n; i++){
-        int k = arr->get(j)->operator&();
+        int k = arr->get(i);
         key = k;
         j = i-1;
         /* Move elements of arr[0..i-1], that are
            greater than key, to one position ahead
            of their current position */
-        while (j >= 0 && arr->get(j)->operator&() > key){
-            T element = arr->get(j)->operator&();
+        while (j >= 0 && arr->get(j) > key){
+            T element = arr->get(j);
             arr->setValue(element, j+1);
             j = j-1;
         }
@@ -93,30 +93,39 @@ void quickSort(LinkedListDouble<T>* arr, int low, int high)
 
 int main()
 {
-    LinkedListDouble<MPointer<int>*>* l1 = new LinkedListDouble<MPointer<int>*>();
-    cout << "lista "<< l1 << endl;
-    MPointer<int>* mPtr5 = new MPointer<int>();
+    LinkedListDouble<int>* l1 = new LinkedListDouble<int>();
+    cout << "Working" << endl;
+    MPointer<int>* mPtr5 =  new MPointer<int>();
+    cout << "Moving on..." << endl;
+    *mPtr5 = 5;
     cout << "mPtr5 " << mPtr5 << endl;
-    mPtr5->setData(5);
-    MPointer<int>* mPtr1 = new MPointer<int>();
-    mPtr1->setData(1);
-    MPointer<int>* mPtr16 = new MPointer<int>();
-    mPtr16->setData(16);
-    MPointer<int>* mPtr4 = new MPointer<int>();
-    cout << "mPtr4 " << mPtr4 << endl;
-    mPtr4->setData(4);
-    cout << "mPtr16 "<<mPtr16 << endl;
-    l1->add(mPtr5);
+    cout << "Moving on..." << endl;
+    MPointer<int>* mPtr1 =  new MPointer<int>();
+    *mPtr1 = 1;
+    cout << "Moving on..." << endl;
+    MPointer<int>* mPtr16 =  new MPointer<int>();
+    *mPtr16 = 16;
+    cout << "Moving on..." << endl;
+    MPointer<int>* mPtr4 =  new MPointer<int>();
+    *mPtr4 = 4;
+    cout << "mPtr4 " << &mPtr4 << endl;
+    cout << "mPtr16 "<< &mPtr16 << endl;
+    cout << "Moving on..." << endl;
+    l1->add(&(*mPtr5));
     cout << 4 << endl;
-    l1->add(mPtr1);
-    l1->add(mPtr16);
-    l1->add(mPtr4);
+    l1->add(&(*mPtr1));
+    l1->add(&(*mPtr16));
+    l1->add(&(*mPtr4));
+    cout << "Moving on..." << endl;
     int n = l1->size;
     cout << n << endl;
     //l1->printList();
-    insertionSort<MPointer<int>*>(l1, 11);
-    quickSort<MPointer<int>*>(l1, 4, 11);
-    bubbleSort<MPointer<int>*>(l1, 4);
+    cout << "Moving on..." << endl;
+    cout << "lista "<< l1 << endl;
+    l1->printList();
+    insertionSort<int>(l1, n);
+    quickSort<int>(l1, 0, n);
+    bubbleSort<int>(l1, n);
 
     auto * list3 = new LinkedListDouble<int>();
     list3->add(45);
@@ -125,11 +134,10 @@ int main()
     list3->add(2);
     list3->add(-34);
     list3->add(48274230);
-    list3->printList();
-    list3->remove(1);
-    std::cout<<std::endl;
-    list3->printList();
-
+    int n2 = list3->size;
+    insertionSort<int>(list3, n2);
+    quickSort<int>(list3, 0, n2);
+    bubbleSort<int>(list3, n2);
 
     return 0;
 }
